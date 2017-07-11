@@ -3,5 +3,6 @@
 names = str(raw_input("Enter 5 name:"))
 name = ['z', 'x', 'c', 'v', 'b']
 for name in names:
-    print name 
-print "The names are", names
+    print names
+
+
