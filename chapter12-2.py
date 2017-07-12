@@ -3,12 +3,12 @@ flag = 'a'
 pape = 'a'
 off = 'a'
 while flag == 'a' or 'c':
-    flag = raw_input("Add or look up a word(a/1)?")
+    flag = raw_input("Add or look up a word?(a/1)")
     if flag == "a":
         word = raw_input("Type the word:")
         defintion = raw_input("Type the defintion:")
         dictionary[str(word)] = str(defintion)
-         print"Word added!"
+         print "Word added!"
          pape = raw_input("Add or look up a word (a/1)?")
          if pape == 'a':
              print dictionary
