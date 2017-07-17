@@ -11,7 +11,7 @@ for x in word:
 print "       WELCOME TO GAME      "
 print slot
 while 1:
-    guess = raw_input("Enter your guess:")
+    guess = str(raw_input("Enter your guess:"))
     while guess in slot or guess in wrongs:
         guess = raw_input("input your guess:")
     if guess in list1:
@@ -31,7 +31,8 @@ while 1:
         else:
             print "You got it!"
             exit()
-            if health == 0:
-                print "Game over!"
-                print "The word is"+ word
-                exit()
+        if health == 0:
+             print "Game over!"
+             print "The word is"+ word
+             exit()
+    
