@@ -13,4 +13,5 @@ for i in my_file.readlines():
         enter = raw_input("Enter auther name:")
         if enter in i:
             print i 
-        break
+        else:
+            print "Can't query!"
