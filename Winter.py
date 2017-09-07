@@ -1,4 +1,6 @@
 input =raw_input(" Enter Celsius or Fahrenheit?(C/F):")
+if input not in ('C', 'F'):
+    exit()
 
 enter = float(raw_input("Enter temperature:"))
 if input == 'C':
@@ -7,5 +9,4 @@ if input == 'C':
 else:
     Celsius = enter - 32 * 5 / 9
     print enter , "fahrenheit is converted to celsius:" , Celsius
-if input not in ('C','F'):
-    exit()
+
